@@ -1,0 +1,669 @@
+section {
+   margin-top: 50px;
+   margin-bottom: 80px;
+}
+
+/* TITLE SECTION */
+.title-section {
+   text-transform: uppercase;
+   font-weight: 300;
+   font-size: 28px;
+   letter-spacing: 3px;
+   display: block;
+   padding: 10px 30px;
+   position: relative;
+   text-align: center;
+   display: inline;
+}
+
+.title-section::before {
+   content: '';
+   position: absolute;
+   width: 40px;
+   height: 5px;
+   background-color: red;
+   right: 0;
+   top: 0;
+   bottom: 0;
+   left: -20px;
+   margin: auto 0;
+}
+
+
+
+/* NAVIGASI */
+.carousel-promo-nav i,
+.carousel-schedule-toefl-nav i,
+.carousel-courses-nav i,
+.slider-awards-nav i,
+.carousel-testimonial-nav i {
+   font-size: 40px;
+   background-color: rgb(192, 192, 192);
+   color: #ffffff;
+   border-radius: 50%;
+   -webkit-border-radius: 50%;
+   -moz-border-radius: 50%;
+   -ms-border-radius: 50%;
+   -o-border-radius: 50%;
+   margin: 0 3px;
+}
+
+.carousel-promo-nav,
+.carousel-schedule-toefl-nav,
+.carousel-courses-nav,
+.slider-awards-nav,
+.carousel-testimonial-nav {
+   position: absolute;
+   right: 15px;
+   bottom: 0;
+}
+
+
+
+/* INDIKATOR CAROUSEL & SLIDER */
+.slider .indicators .indicator-item,
+.carousel .indicators .indicator-item {
+   height: 15px;
+   width: 15px;
+   margin: 0 10px;
+   background-color: grey !important;
+ }
+ 
+.slider .indicators .indicator-item.active,
+.carousel .indicators .indicator-item.active {
+   background-color: #200062 !important;
+}
+
+
+/* SECTION - FIRST LANDING */
+.first-landing {
+   position: relative;
+   background-color: #200062;
+   padding: 50px 30px;
+   overflow: hidden;
+   margin-top: -10px;
+}
+
+.first-landing::before {
+   position: absolute;
+   content: '';
+   width: 100%;
+   height: 100%;
+   top: 0;
+   left: 0;
+   background: linear-gradient(217deg, rgba(117, 115, 221, 0.8), rgba(255,0,0,0) 70.71%),
+               linear-gradient(127deg, rgba(26, 21, 68, 0.8), rgba(62, 12, 155, 0) 70.71%),
+               linear-gradient(336deg, rgba(4, 11, 71, 0.8), rgba(255, 255, 255, 0) 70.71%);
+}
+
+.first-landing .jumbotron {
+   position: relative;
+   z-index: 1;
+   color: #FFF;
+}
+
+.first-landing .jumbotron h1 {
+   font-size: 42px;
+}
+
+.first-landing .image-float {
+   position: absolute;
+}
+
+.first-landing .image-float img {
+   position: relative;
+   width: 230px;
+   transform: rotate(10deg);
+   padding: 10px;
+   border: 2px solid #FFF;
+   border-radius: 10px;
+}
+
+
+
+/* SECTION - TESTING SERVICE */
+.testing-service .title-section {
+   font-size: 28px;
+}
+
+.testing-service .jumbotron {
+   margin-top: 10px;
+}
+
+.testing-service .card {
+   box-shadow: none;
+   border: 1px solid #555;
+   cursor: default;
+   z-index: 1;
+   position: relative;
+   height: 270px;
+   color: #555;
+   overflow: hidden;
+   font-size: 14px;
+}
+
+.testing-service .card-content {
+   padding: 10px 15px 20px;
+}
+
+.testing-service .card-title {
+   font-size: 15px;
+   font-style: italic;
+   font-weight: 800;
+   margin-bottom: 15px !important;
+}
+
+.testing-service .card::before {
+   content: '';
+   position: absolute;
+   width: 100%;
+   height: 100%;
+   top: 0;
+   z-index: -1;
+   opacity: 0;
+   transition: .5s ease;
+   -webkit-transition: .5s ease;
+   -moz-transition: .5s ease;
+   -ms-transition: .5s ease;
+   -o-transition: .5s ease;
+}
+
+.testing-service .card:hover {
+   box-shadow: 0 0 25px rgba(0,0,0,.5);
+   color: #000;
+   border: 1px solid rgb(214, 214, 214);
+}
+
+.testing-service .card-title::before {
+   position: absolute;
+   content: '';
+   width: 55px;
+   height: 5px;
+   top: 42px;
+   left: -15px;
+   transition: .5s ease;
+   -webkit-transition: .5s ease;
+   -moz-transition: .5s ease;
+   -ms-transition: .5s ease;
+   -o-transition: .5s ease;
+}
+
+.testing-service .card:hover .card-title::before { 
+   left: 0;
+   width: 100%;
+   background-color: rgb(214, 214, 214);
+}
+
+
+/* Card TOEF IBT */
+.testing-service .card-toef-ibt::before {
+   background: linear-gradient(rgba(111, 231, 74, 0.7), rgba(111, 231, 74, 0.7)), url('../img/testing_service/img-1.jpg');
+   background-size: cover;
+}
+
+.testing-service .card-toef-ibt:hover::before {
+   opacity: 1;
+}
+
+.testing-service .card-toef-ibt .card-title::before { 
+   background-color:rgb(110, 231, 74); 
+}
+
+
+/* Card TOEFL ITP */
+.testing-service .card-toefl-itp::before {
+   background: linear-gradient(rgba(231, 181, 74, 0.7), rgba(231, 181, 74, 0.7)), url('../img/testing_service/img-2.jpg');
+   background-size: cover;
+}
+
+.testing-service .card-toefl-itp:hover::before {
+   opacity: 1;
+}
+
+.testing-service .card-toefl-itp .card-title::before { 
+   background-color:rgb(231, 181, 74); 
+}
+
+
+/* Card TOEIC */
+.testing-service .card-toeic::before {
+   background: linear-gradient(rgba(74, 168, 231, 0.7), rgba(74, 168, 231, 0.7)), url('../img/testing_service/img-3.jpg');
+   background-size: cover;
+}
+
+.testing-service .card-toeic:hover::before {
+   opacity: 1;
+}
+
+.testing-service .card-toeic .card-title::before { 
+   background-color:rgb(74, 168, 231); 
+}
+
+
+/* Card IELTS */
+.testing-service .card-ielts::before {
+   background: linear-gradient(rgba(231, 74, 179, 0.7), rgb(231, 74, 179, 0.7)), url('../img/testing_service/img-4.jpg');
+   background-size: cover;
+}
+
+.testing-service .card-ielts:hover::before {
+   opacity: 1;
+}
+
+.testing-service .card-ielts .card-title::before { 
+   background-color:rgb(231, 74, 179); 
+}
+
+
+/* Card Prediction Test */
+.testing-service .card-prediction-test::before {
+   background: linear-gradient(rgb(231, 74, 74, 0.7), rgb(231, 74, 74, 0.7)), url('../img/testing_service/img-5.jpg');
+   background-size: cover;
+}
+
+.testing-service .card-prediction-test:hover::before {
+   opacity: 1;
+}
+
+.testing-service .card-prediction-test .card-title::before { 
+   background-color:rgb(231, 74, 74); 
+}
+
+
+
+/* SECTION - AWARDS */
+.awards {
+   position: relative;
+}
+
+.awards .title-section {
+   color: #000;
+}
+
+.awards .container {
+   position: relative;
+}
+
+.slider-awards {
+   margin-top: 20px;
+}
+
+.slider-awards .caption {
+   text-align: center;
+   height: 85% !important;
+   width: 90% !important;
+   margin-top: -25px;
+   margin-left: -110px;
+}
+
+.slider-awards .slides li {
+   background: linear-gradient(217deg, rgba(136, 27, 27, 0.8), rgba(255,0,0,0) 70.71%),
+               linear-gradient(127deg, rgba(170, 185, 169, 0.8), rgba(26, 12, 155, 0.651) 70.71%),
+               linear-gradient(336deg, rgba(61, 68, 131, 0.8), rgba(197, 195, 195, 0.76) 70.71%);
+}
+
+.slider-awards .slides .img-awards {
+   text-align: center;
+   margin-top: -10px;
+   height: 350px;
+}
+
+.slider-awards .slides .img-awards img.potrait {
+   max-width: 250px;  
+}
+
+.slider-awards .slides .img-awards img.landscape {
+   max-height: 320px;
+}
+
+.slider-awards-nav {
+   bottom: -5px;
+}
+
+.slider-awards .caption.left-align {
+   text-align: left;
+}
+
+.slider-awards .caption.right-align {
+   text-align: right;
+}
+
+
+/* SECTION - CAROUSEL COURSES */
+.courses {
+   position: relative;
+}
+
+.courses::before {
+   position: absolute;
+   content: '';
+   width: 100%;
+   height: 40%;
+   background: linear-gradient(217deg, rgb(33, 0, 98), rgba(43, 75, 180, 0.397) 70.71%),
+               linear-gradient(127deg, rgba(57, 6, 158, 0.8), rgba(2, 70, 133, 0.568) 70.71%),
+               linear-gradient(336deg, rgba(22, 4, 58, 0.8), rgba(0, 0, 0, 0.486) 70.71%);
+   margin-top: -32px;
+}
+
+.courses .container {
+   position: relative;
+}
+
+.carousel-courses.carousel {
+   margin-top: 20px;
+   position: relative;
+   height: 450px !important;
+}
+
+.carousel-courses.carousel .carousel-item {
+   width: 280px;
+   margin-top: -110px;
+   opacity: 1 !important;
+}
+
+.carousel-courses .card {
+   box-shadow: none;
+   height: 380px;
+}
+
+.carousel-courses .card .card-image {
+   height: 150px;
+   overflow: hidden;
+}
+
+.carousel-courses .card .card-image .card-title {
+   background-color: rgba(255, 255, 255, 0.726);
+   width: 90%;
+   height: 85%;
+   font-weight: 800;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   color: #200062;
+   text-align: center;
+   padding: 20px;
+   font-size: 28px;
+   text-transform: uppercase;
+   line-height: 30px;
+   transition: .3s ease-in-out;
+   -webkit-transition: .3s ease-in-out;
+   -moz-transition: .3s ease-in-out;
+   -ms-transition: .3s ease-in-out;
+   -o-transition: .3s ease-in-out;
+   -webkit-transform: translate(-50%, -50%);
+   -moz-transform: translate(-50%, -50%);
+   -ms-transform: translate(-50%, -50%);
+   -o-transform: translate(-50%, -50%);
+}
+
+.carousel-courses .card:hover .card-title {
+   width: 100%;
+   height: 100%;
+}
+
+.carousel-courses .card .card-content {
+   font-weight: 300;
+   overflow: hidden;
+   height: 200px;
+   text-align: center;
+}
+
+.carousel-courses .btn-sign-up {
+   position: absolute;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   -webkit-transform: translate(-50%, -50%);
+   -moz-transform: translate(-50%, -50%);
+   -ms-transform: translate(-50%, -50%);
+   -o-transform: translate(-50%, -50%);
+   display: none;
+}
+
+.carousel-courses .card:hover .btn-sign-up {
+   display: block;
+}
+
+.carousel-courses .btn-add-courses {
+   position: absolute;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   -webkit-transform: translate(-50%, -50%);
+   -moz-transform: translate(-50%, -50%);
+   -ms-transform: translate(-50%, -50%);
+   -o-transform: translate(-50%, -50%);
+}
+
+
+/* SECTION - SCHEDULE TOEFL */
+.schedule-toefl {
+   position: relative;
+}
+
+.schedule-toefl::before {
+   position: absolute;
+   content: '';
+   width: 100%;
+   /* background: linear-gradient(to top, rgb(33, 0, 98), rgba(33, 0, 98, 0.973) 100%); */
+   height: 50%;
+   top: -30px;
+}
+
+.schedule-toefl .title-section {
+   font-size: 28px;
+}
+
+.schedule-toefl .container {
+   position: relative;
+}
+
+.carousel-schedule-toefl.carousel {
+   position: relative;
+   height: 280px !important;
+}
+
+.carousel-schedule-toefl.carousel .carousel-item {
+   margin-top: -10px;
+   opacity: 1 !important;
+}
+
+.carousel-schedule-toefl .card {
+   box-shadow: none;
+   height: 190px;
+   border: 2px solid rgb(33, 0, 98);
+   border-top: none;
+}
+
+.carousel-schedule-toefl .card .card-title {
+   height: 60px;
+   font-size: 40px;
+   font-weight: 800;
+   color: #FFF;
+   text-shadow: 0 0 1px #000;
+   text-align: center;
+   background-color: rgb(33, 0, 98);
+}
+
+.carousel-schedule-toefl .card .card-content {
+   font-weight: 600;
+   overflow: hidden;
+   height: 100px;
+   text-align: left;
+   font-size: 16px;
+   color: #210062f5;
+   padding: 10px;
+}
+
+.carousel-schedule-toefl .card .card-content i {
+   margin-right: 5px;
+}
+
+.carousel-schedule-toefl-nav-mobile {
+   margin-top: 10px;
+}
+
+
+/* SECTION - TESTIMONIAL */
+.testimonial {
+   margin-top: 0;
+}
+
+.testimonial .container {
+   position: relative;
+}
+
+.carousel-testimonial.carousel {
+   height: 400px !important;
+}
+
+.carousel-testimonial .card {
+   height: 270px;
+   margin-top: 80px;
+   box-shadow: none;
+   position: relative;
+   border-radius: 0;
+   -webkit-border-radius: 0;
+   -moz-border-radius: 0;
+   -ms-border-radius: 0;
+   -o-border-radius: 0;
+   -o-border-radius: 0;
+}
+
+.carousel-testimonial img {
+   width: 100px;
+   margin: -50px 15px;
+   padding: 5px;
+   position: absolute;
+}
+
+.carousel-testimonial .img-person-1 { 
+   background-color: #7CB342;
+}
+
+.carousel-testimonial .img-person-2 { 
+   background-color: #FFCA28; 
+}
+
+.carousel-testimonial .img-person-3 { 
+   background-color: #B0BEC5; 
+}
+
+.carousel-testimonial .img-person-4 { 
+   background-color: #CE93D8; 
+}
+
+.carousel-testimonial .img-person-5 { 
+   background-color: #64B5F6; 
+}
+
+.carousel-testimonial .img-person-6 { 
+   background-color: #80CBC4; 
+}
+
+.carousel-testimonial .img-person-7 { 
+   background-color: #FFCC80; 
+}
+
+.carousel-testimonial .img-person-8 { 
+   background-color: #E57373; 
+}
+
+.carousel-testimonial .img-person-9 { 
+   background-color: #F48FB1; 
+}
+
+.carousel-testimonial .card-content {
+   padding: 60px 20px 10px;
+   height: 220px;
+   font-style: italic;
+   font-weight: 300;
+   overflow: hidden;
+   font-size: 12px;
+}
+
+.carousel-testimonial .name-person {
+   padding: 10px 20px;
+   display: block;
+   text-align: right;
+   font-weight: 400;
+   font-style: italic;
+}
+
+
+
+/* SECTION - PROMO */
+.promo {
+   margin-top: 0;
+}
+
+.promo .container {
+   position: relative;
+}
+
+.carousel-promo.carousel {
+   margin-top: 20px;
+   position: relative;
+   height: 450px !important;
+}
+
+.carousel-promo .carousel-item {
+   top: -40px;
+   height: 380px;
+   width: 300px;
+   opacity: 1 !important;
+}
+
+.carousel-promo .card,
+.carousel-promo .card .card-image {
+   height: 100%;
+}
+
+.carousel-promo .card-image img {
+   width: 100%;
+   height: 100%;
+}
+
+.carousel-promo .btn-add-promo {
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   -webkit-transform: translate(-50%, -50%);
+   -moz-transform: translate(-50%, -50%);
+   -ms-transform: translate(-50%, -50%);
+   -o-transform: translate(-50%, -50%);
+}
+
+
+
+/* Modal */
+.modal-add-promo,
+.modal-edit-courses,
+.modal-edit-schedule,
+.modal-edit-testimonial {
+   width: 500px;
+   background-color: #3A4652;
+   color: #ccc;
+}
+
+.delete-promo,
+.edit-courses,
+.edit-schedule,
+.edit-testi {
+   background-color: rgba(0, 0, 0, .2);
+   position: absolute;
+   right: 0;
+   padding: 2px;
+   cursor: pointer;
+   color: #222;
+   z-index: 1;
+}
+
+.delete-courses {
+   background-color: rgba(0, 0, 0, .2);
+   position: absolute;
+   left: 0;
+   padding: 2px;
+   cursor: pointer;
+   color: #222;
+   z-index: 1;
+}
