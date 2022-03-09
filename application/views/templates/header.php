@@ -1,6 +1,4 @@
-<?php 
-defined('BASEPATH') OR exit('No direct script access allowed');
-?>
+
 
 <!DOCTYPE html>
 <html lang="en">
@@ -48,6 +46,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 			        	<li><a class="link" href="<?php echo base_url('partnerships'); ?>">Partnerships</a></li>
 			        	<li><a class="link" href="<?php echo base_url('careers'); ?>">Gallery</a></li>
 			        	<li><a class="link" href="">Event</a></li>
+			        	<li><a class="link" href="https://toefl.ltigroup.id/" target="_BLANK">Test Toefl</a></li>
 			      </ul>
 				</div>
 			</div>
